@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000", allowedHeaders = "*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
+// register-eight-self.vercel.app   or you only use * in origin which mean all
 public class UserController {
 
     @Autowired
